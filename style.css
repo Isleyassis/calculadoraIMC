@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.main-container {
+    background-color: rgb(224, 224, 0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 15px black;
+}
+
+.main-container__title {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.main-container__title::after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 4px;
+}
+
+.main-container__child {
+    margin-bottom: 20px;
+}
+
+.main-container__Label {
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.main-container__button {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.main-container__result {
+    width: 90%;
+    height: 150px;
+    background-color: black;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+#peso, #altura, #nome {
+    padding: 3px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
