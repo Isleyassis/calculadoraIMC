@@ -12,10 +12,15 @@ let resultado = document.getElementById("resultado");
 
         if (calcimc < 18) {
             resultado.innerHTML = nome + ' seu IMC é ' + calcimc + ' </br> você está abaixo do peso'
+            resultado.style.backgroundColor = "yellow"
+
         }else if (calcimc >= 18 && calcimc <= 25) {
             resultado.innerHTML = nome + ' seu IMC é ' + calcimc + ' </br> você está com o peso ideal'
+            resultado.style.backgroundColor = "green"
+
         } else {
             resultado.innerHTML = nome + ' seu IMC é ' + calcimc + ' </br> você está acima do peso'
+            resultado.style.backgroundColor = "red"
         } 
     } else {
         resultado.innerHTML = "Preencha todos os campos acima!!"
